@@ -1,4 +1,5 @@
 name: Build and Release RJmcmod
+run: gradle build
 
 on:
   release:
