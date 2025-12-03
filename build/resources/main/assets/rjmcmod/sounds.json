@@ -1,0 +1,10 @@
+{
+  "love_theme": {
+    "sounds": [
+      {
+        "name": "rjmcmod:love_theme",
+        "stream": true
+      }
+    ]
+  }
+}
