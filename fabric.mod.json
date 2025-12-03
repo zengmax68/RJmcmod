@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "rjmcmod",
+  "version": "1.0.0",
+  "name": "RJmcmod",
+  "description": "Adds Juliet's Flower and Love Theme disc.",
+  "authors": ["Max"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.max.rjmcmod.RJmcmod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "fabric": "*",
+    "minecraft": "1.21.10",
+    "fabric-api": "*"
+  }
+}
