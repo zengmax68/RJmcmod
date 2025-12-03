@@ -1,15 +1,25 @@
 {
-  "type": "minecraft:chest",
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "item",
-          "name": "rjmcmod:juliets_flower",
-          "weight": 1
-        }
-      ]
+  "display": {
+    "title": "Star-Crossed Lovers",
+    "description": "Obtain Juliet's Flower",
+    "icon": {
+      "item": "rjmcmod:juliets_flower"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "got_flower": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "rjmcmod:juliets_flower"
+          }
+        ]
+      }
     }
-  ]
+  }
 }

@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.5.7'
+    id 'fabric-loom' version '1.6.12'
     id 'java'
 }
 
@@ -9,7 +9,7 @@ archivesBaseName = project.archives_base_name
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(25) // Java 25
+        languageVersion = JavaLanguageVersion.of(21) // Java 21
     }
 }
 
@@ -19,7 +19,7 @@ repositories {
 }
 
 dependencies {
-    // Minecraft + Yarn mappings
+    // Core Minecraft + Yarn mappings
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 
