@@ -1,0 +1,2 @@
+/advancement grant @s rjmcmod:star_crossed_lovers
+/kill @s
