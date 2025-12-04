@@ -10,21 +10,17 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class RJmcmod implements ModInitializer {
-    // Juliet's Flower item
-    public static final Item JULIETS_FLOWER = new Item(
-            new Item.Settings().maxCount(64)
-    );
+    public static Item JULIETS_FLOWER;
 
     @Override
     public void onInitialize() {
-        // Register the item
-        Registry.register(
+        // Use Identifier.of instead of new Identifier
+        JULIETS_FLOWER = Registry.register(
                 Registries.ITEM,
                 Identifier.of("rjmcmod", "juliets_flower"),
-                JULIETS_FLOWER
+                new Item(new Item.Settings().maxCount(64))
         );
 
-        // Add to creative tab
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.add(new ItemStack(JULIETS_FLOWER));
         });
